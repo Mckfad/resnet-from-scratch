@@ -1,4 +1,4 @@
-```markdown
+
 # ResNet-18 From Scratch — CIFAR-10
 
 **Par :** Yham Steeve Mackéols FADEGNON  

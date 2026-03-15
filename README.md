@@ -23,7 +23,7 @@ J'ai implémenté ResNet-18 from scratch sur CIFAR-10. Pas de `torchvision.model
 | **Split** | 50 000 train / 10 000 test |
 | **Téléchargement** | **Automatique** via `torchvision.datasets.CIFAR10` au premier lancement |
 
-Les données se téléchargent automatiquement dans `./data/` ( ~170 MB) quand vous lancez le script. Pas besoin de les télécharger manuellement.
+Les données se téléchargent automatiquement dans `./data/` ( ~170 MB) quand vous lancez le script (resnet18_cifar10.py). Pas besoin de les télécharger manuellement.
 
 ---
 
@@ -31,7 +31,8 @@ Les données se téléchargent automatiquement dans `./data/` ( ~170 MB) quand v
 
 ### 1. Classification d'images
 
-Le modèle prend en entrée une image RGB 32×32 et prédit une des 10 classes CIFAR-10.
+Le modèle prend en entrée une image RGB 32×32 et prédit une des 10 classes CIFAR-10 ['avion', 'auto', 'oiseau', 'chat', 'cerf',
+               'chien', 'grenouille', 'cheval', 'bateau', 'camion']: il serait donc plus intéressant de tester que sur des images appartenant à l'une de ces classes car je n'ai pas pris le soin de gérer le cas des images qui ne sont pas de ces classes étant donné que ce n'est pas un projet complet de classification d'image ou de caption generation.
 
 **Pipeline de prédiction :**
 ```
